@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Desarrollador de web, programacion y mas">
-  <title>Portafolio || full stack </title>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="container">
-        <a href="#">
-          <p>LOGO.</p>
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Desarrollador de web, programacion y mas"
+    />
+    <title>Portafolio || full stack</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body class="bg-black-thing">
+    <header>
+      <nav class="p-4 lg:px-0 md:max-w-4xl md:mx-auto">
+        <div class="text-blue-500 grid grid-cols-2 gap-4">
+          <a class="col-span-1 mr-auto" href="#">
+            <p class="font-bold text-white">LOGO.</p>
+          </a>
 
-        <button type="button">
-          <img src="./assets/icons/hamburger.svg" alt="icono del menu estilo hamburgesa">
-        </button>
+          <button type="button" class="col-span-1 ml-auto md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+            </svg>
+          </button>
 
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Project</a>
-          </li>
-        </ul>
+          <div class="col-span-2 md:col-span-1 overflow-hidden relative">
+            <ul class="flex flex-col gap-y-2 transform translate-y-full transition-transform absolute top-full md:flex-row md:justify-between md:translate-y-0">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Project</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    <main class="p-4 lg:px-0 md:max-w-4xl md:mx-auto">
+      <div class="text-white">
+        <img src="./assets/Juan_Francisco_Herrera.jpg" alt="presentacion" class="aspect-square object-cover scale-50 rounded-full">
+        
+        <h2 class="block text-7xl text-blue-500 mb-4">Juan Herrera W.</h2>
+        
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Laborum autem deserunt quaerat incidunt recusandae ab?
+        </p>
+
+        <h2 class="block text-xl text-blue-500 mb-4">Desarrollador Web.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Sint quasi placeat suscipit consectetur vel odit.
+        </p>
+
       </div>
-    </nav>
-  </header>
-</body>
+    </main>
+  </body>
+  <script type="module" src="./index.js"></script>
 </html>
