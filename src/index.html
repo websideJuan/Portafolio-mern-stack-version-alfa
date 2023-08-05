@@ -1,138 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Desarrollador de web, programacion y mas"
+      content="Desarrollador de web, programacion, noticias y mas"
     />
-    <title>Portafolio || full stack</title>
+    <title>Portfolio || MERN stack</title>
 
     <!--Font awesome for CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!--CSS Styles for -->
     <link rel="stylesheet" href="css/app.css" />
   </head>
   <body class="bg-black-thing">
-    <header>
-      <nav class="p-4 md:px-0 md:max-w-4xl md:mx-auto">
-        <div class="text-blue-500 grid grid-cols-2 gap-0">
-
-          <a class="col-span-1 mr-auto" href="#">
-            <p class="font-bold text-white text-xl">LOGO.</p>
-          </a>
-
-          <button type="button" class="col-span-1 ml-auto md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-8 h-8"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-              />
-            </svg>
+    <header class="bg-black-thing shadow fixed top-0 w-full z-50">
+      <nav class="p-5 md:px-0 md:max-w-6xl md:mx-auto">
+        <div class="text-white/75 grid grid-cols-2">
+          <button
+            type="button"
+            class="col-span-2 ml-auto relative z-50 md:hidden"
+            data-toggle-menu="toggle"
+          >
+            <i class="fa-solid fa-bars fa-xl"></i>
           </button>
 
-          <div class="col-span-2 md:col-span-1 overflow-hidden relative">
-            <ul class="flex flex-col gap-y-2 transform translate-y-full transition-transform absolute top-full md:flex-row md:justify-end md:gap-x-8 md:translate-y-0 md:relative md:top-0 md:ml-auto">
+          <div class="col-span-2 md:col-span-2">
+            <ul class="flex flex-col justify-center gap-y-12 fixed top-0 bottom-0 right-0 p-4 transition-transform bg-black/70 text-xl w-1/2 translate-x-full md:translate-x-0 md:text-base md:p-0 md:static md:bg-transparent md:flex-row md:justify-end md:gap-x-8 md:translate-y-0 md:ml-auto">
               <li>
-                <a href="#">Home</a>
+                <a class="hover:text-white" href="#">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a class="hover:text-white" href="#about">About</a>
               </li>
               <li>
-                <a href="#">Project</a>
+                <a class="hover:text-white" href="#skillsets">Technologies</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a class="hover:text-white" href="#project">Project</a>
+              </li>
+              <li>
+                <a class="hover:text-white" href="#">Contact</a>
               </li>
             </ul>
           </div>
-
         </div>
       </nav>
     </header>
-    <main class="p-20 px-4  md:px-0 md:max-w-4xl md:mx-auto">
-      <!--HERO-->
-      <div class="text-white md:grid grid-cols-12 md:gap-x-14">
-        <div class="md:col-span-4 flex flex-col gap-4">
-          <img src="./assets/Juan_Francisco_Herrera.jpg" 
-            alt="presentacion" 
-            class="w-44 h-44 object-cover mx-auto rounded-full border border-spacing-60 md:w-80 md:h-64"
-          />
-        
-          <div class="my-12 p-3 bg-black/20 rounded-lg md:mb-0">
-            <div class="flex justify-evenly md:justify-center md:gap-10">
-              <a href="#" class="text-blue-600 transition-transform hover:trasnform hover:scale-125 hover:text-blue-400">
-                <i class="fa-brands fa-github fa-lg"></i>
-              </a>
-  
-              <a href="#" class="text-blue-600 transition-transform hover:trasnform hover:scale-125 hover:text-blue-400">
-                <i class="fa-brands fa-linkedin fa-lg"></i>
-              </a>
 
-              <a href="#" class="text-blue-600 transition-transform hover:trasnform hover:scale-125 hover:text-blue-400">
-                <i class="fa-solid fa-file fa-lg"></i>
-              </a>
+    <main id="main">
+
+      <!--HERO-->
+      <div class="px-4 md:px-0 md:max-w-6xl md:mx-auto flex justify-stretch items-center min-h-screen mt-16 md:mt-0">
+        <div class="text-white w-full grid grid-cols-12 md:gap-x-10">
+          <div class="col-span-12 md:col-span-4 flex flex-col gap-4">
+            <img
+              src="./assets/Juan_Francisco_Herrera.jpg"
+              alt="presentacion"
+              class="w-40 h-40 object-cover mx-auto rounded-full shadow-xl md:w-72 md:h-72"
+              style="box-shadow: 0 0 700px rgb(0, 0, 0), 350px -150px 0 rgba(0, 0, 0, .1), 700px 250px rgba(0, 0, 0, .1)"
+            />
+
+            <div class="my-12 p-3 bg-black/20 rounded-lg md:mb-0 md:my-10">
+              <div class="flex justify-evenly md:justify-center md:gap-10">
+                <a
+                  href="#"
+                  class="text-blue-600 transition-transform hover:trasnform hover:scale-125 hover:text-blue-400"
+                >
+                  <i class="fa-brands fa-github fa-lg"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="text-blue-600 transition-transform hover:trasnform hover:scale-125 hover:text-blue-400"
+                >
+                  <i class="fa-brands fa-linkedin fa-lg"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="text-blue-600 transition-transform hover:trasnform hover:scale-125 hover:text-blue-400"
+                >
+                  <i class="fa-solid fa-file fa-lg"></i>
+                </a>
+              </div>
             </div>
           </div>
-          
-        </div>
-        <div class="md:col-span-8 flex flex-col gap-8">
-          <h1 class="block text-7xl text-blue-500 mt-4 md:col-span-8 md:text-8xl md:mt-0">Juan Herrera W.</h1>
-      
-          <h3 class="text-2xl text-blue-800">Desarrollador Web MERN stack</h3>
-          <p class="opacity-75 md:text-base">
-            Desde aplicaciones, paginas o sistemas de TI, mejorando el pensamiento logico para resolver problemas con codigo!.
-          </p>
-          <h3 class="text-2xl text-blue-800">Desarrollador Web MERN stack</h3>
-          <p class="opacity-75 md:text-base">
-            Desde aplicaciones, paginas o sistemas de TI, mejorando el pensamiento logico para resolver problemas con codigo!.
-          </p>
+
+          <div class="col-span-12 flex flex-col gap-8 text-center md:col-span-8 md:gap-8 md:text-start">
+            <h1
+              class="block text-6xl text-blue-500 mt-4 md:col-span-8 md:text-8xl md:mt-0 text-end"
+            >
+              Juan Herrera W.
+            </h1>
+
+            <h3 class="text-xl text-blue-800 mt-auto md:text-2xl md:ml-20">
+              MERN stack web developer
+            </h3>
+            <p
+              class="opacity-75 max-w-2xl mx-auto text-base md:mr-0 md:ml-auto"
+            >
+              Desde aplicaciones, paginas o sistemas de TI, mejorando el
+              pensamiento logico para resolver problemas con codigo!. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Debitis <br> facilis
+              tempore vero ea? Sequi, cupiditate!
+            </p>
+
+            <p class="opacity-75 hidden max-w-2xl ml-auto md:block">
+              Desde aplicaciones, paginas o sistemas de TI, mejorando el
+              pensamiento logico para resolver problemas con codigo!. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Debitis <br> facilis
+              tempore vero ea? Sequi, cupiditate!
+            </p>
+          </div>
         </div>
       </div>
 
       <!--ABOUT-->
-      <div class="grid place-content-center my-40 bg-gradient-to-b from-black/80 rounded-lg text-white py-12">
-        <div class="flex flex-col gap-4 text-center">
-          <h4 class="text-3xl">ABOUT ME</h4>
-          <p>Texto descriptivo del titulo antes <br> mencionado, hablando de mi y mi <br> formacion academica, tambien puedo <br> mencionar mis hobbies, y mi trabajo <br> com FREELANCER</p>
+      <div class="md:max-w-6xl md:mx-auto grid place-content-center min-h-screen my-8 text-white py-12" id="about">
+        <div
+          class="flex flex-col gap-8 text-center bg-black/20 shadow-lg py-20 px-4 md:p-20 md:rounded-lg"
+        >
+          <h4 class="text-3xl text-blue-500">ABOUT ME</h4>
+
+          <p
+            class="h-36 overflow-hidden md:h-auto md:leading-6 opacity-75"
+            id="ReducerText"
+          >
+            Texto descriptivo del titulo antes mencionado, hablando de mi y mi
+            formacion academica, tambien puedo mencionar mis hobbies, y mi
+            trabajo com FREELANCER, este texto es solo para incorporar mas
+            relleno al texto de about y ver que tal se ve la vista para poder
+            desplegar el portafolio y ya tener algo que Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Aspernatur quo quia magnam
+            nostrum adipisci vitae. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Maxime est rem aliquid, perspiciatis fugiat
+            tempora! Lorem ipsum dolor sit amet consectetur.
+          </p>
+
+          <a
+            class="bg-black/30 px-6 py-2 w-max mx-auto rounded-lg transition-transform text-blue-500 hover:text-white/75 hover:scale-90 hover:bg-black/50"
+            href="#"
+          >
+            Leer mas
+          </a>
         </div>
       </div>
 
-      <!--FEATURE-->
-      <div class="flex flex-wrap gap-y-8 item-center md:justify-between">
-        <div class="bg-black/20 flex flex-col items-center p-5 pt-6 gap-4 min-w-full rounded-lg  md:min-w-fit md:flex-row">
-          <i class="block fa-solid fa-mobile fa-2xl text-blue-500"></i>
-          <div class="text-white opacity-75 text-center md:text-left">
-            <h5 class="mb-4 text-blue-500">Mobile First</h5>
-            <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br> Sint excepturi itaque.</p>
-          </div>
+      <!--Skills-->
+      <div class="px-4 md:px-0 md:max-w-6xl md:mx-auto flex flex-col gap-8 items-center justify-center min-h-screen md:grid-cols-3" id="skillsets">
+        <div class="border-t border-blue-500 rounded">
+          <h5
+            class="bg-black/25 text-blue-500 p-2 rounded text-3xl text-center md:px-8 md:w-min md:text-end"
+          >
+            Technologies
+          </h5>
         </div>
-        <div class="bg-black/20 flex flex-col items-center p-5 pt-6 gap-4 min-w-full rounded-lg  md:min-w-fit md:flex-row">
-          <i class="fa-solid fa-code fa-2xl text-blue-500"></i>
-          <div class="text-white opacity-75 text-center md:text-left">
-            <h5 class="mb-4 text-blue-500">Clean code</h5>
-            <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br> Sint excepturi itaque.</p>
+
+        <div class="grid grid-cols-2 gap-y-6 gap-x-4 item-center md:justify-between md:grid-cols-3">
+
+          <div class="bg-black/20 flex flex-col px-8 py-5 gap-4  rounded-lg transition-transform md:min-w-fit hover:shadow-lg hover:scale-105 hover:border-t hover:border-blue-500">
+            <div class="flex flex-col items-center gap-4 text-blue-500 text-lg md:flex-row">
+              <i class="fa-brands fa-square-js text-yellow-300"></i>
+              <h5>JavaScript</h5>
+            </div>
+            <div class="text-white/75 text-center md:text-left">
+              <p class="text-sm hidden md:block">
+                Lorem ipsum dolor sit amet palabral palabra para
+                <span class="md:block">
+                  adipisicing elit. Sint excepturi itaque.
+                </span>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="bg-black/20 flex flex-col items-center p-5 pt-6 gap-4 min-w-full rounded-lg  md:min-w-fit md:flex-row">
-          <i class="fa-solid fa-code-branch fa-2xl text-blue-500"></i>
-          <div class="text-white opacity-75 text-center md:text-left">
-            <h5 class="mb-4 text-blue-500">Patrones de diseño</h5>
-            <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br> Sint excepturi itaque.s</p>
+
+          <div class="bg-black/20 flex flex-col px-8 py-5 gap-4  rounded-lg transition-transform md:min-w-fit hover:shadow-lg hover:scale-105 hover:border-t hover:border-blue-500">
+            <div
+              class="flex flex-col items-center gap-4 text-blue-500 text-lg md:flex-row"
+            >
+              <i class="fa-brands fa-html5 text-orange-500"></i>
+              <h5>HTML</h5>
+            </div>
+            <div class="text-white/75 text-center md:text-left">
+              <p class="text-sm hidden md:block">
+                Lorem ipsum dolor sit amet palabral palabra para
+                <span class="md:block">
+                  adipisicing elit. Sint excepturi itaque.
+                </span>
+              </p>
+            </div>
           </div>
+
+          <div class="bg-black/20 flex flex-col px-8 py-5 gap-4  rounded-lg transition-transform md:min-w-fit hover:shadow-lg hover:scale-105 hover:border-t hover:border-blue-500">
+            <div
+              class="flex flex-col items-center gap-4 text-blue-500 text-lg md:flex-row"
+            >
+              <i class="fa-brands fa-css3-alt"></i>
+              <h5>CSS</h5>
+            </div>
+            <div class="text-white/75 text-center md:text-left">
+              <p class="text-sm hidden md:block">
+                Lorem ipsum dolor sit amet palabral palabra para
+                <span class="md:block">
+                  adipisicing elit. Sint excepturi itaque
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-black/20 flex flex-col px-8 py-5 gap-4  rounded-lg transition-transform md:min-w-fit hover:shadow-lg hover:scale-105 hover:border-t hover:border-blue-500">
+            <div
+              class="flex flex-col items-center gap-4 text-blue-500 text-lg md:flex-row"
+            >
+              <i class="fa-brands fa-react text-cyan-400"></i>
+              <h5>React</h5>
+            </div>
+            <div class="text-white/75 text-center md:text-left">
+              <p class="text-sm hidden md:block">
+                Lorem ipsum dolor sit amet palabral palabra para
+                <span class="md:block">
+                  adipisicing elit. Sint excepturi itaque
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-black/20 flex flex-col px-8 py-5 gap-4  rounded-lg transition-transform md:min-w-fit hover:shadow-lg hover:scale-105 hover:border-t hover:border-blue-500">
+            <div
+              class="flex flex-col items-center gap-4 text-blue-500 text-lg md:flex-row"
+            >
+              <i class="fa-brands fa-node-js text-green-600"></i>
+              <h5>Node</h5>
+            </div>
+            <div class="text-white/75 text-center md:text-left">
+              <p class="text-sm hidden md:block">
+                Lorem ipsum dolor sit amet palabral palabra para
+                <span class="md:block">
+                  adipisicing elit. Sint excepturi itaque
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-black/20 flex flex-col px-8 py-5 gap-4  rounded-lg transition-transform md:min-w-fit hover:shadow-lg hover:scale-105 hover:border-t hover:border-blue-500">
+            <div
+              class="flex flex-col items-center gap-4 text-blue-500 text-lg md:flex-row"
+            >
+              <h5 class="text-gray-400">Express Js</h5>
+            </div>
+            <div class="text-white/75 text-center md:text-left">
+              <p class="text-sm hidden md:block">
+                Lorem ipsum dolor sit amet palabral palabra para
+                <span class="md:block">
+                  adipisicing elit. Sint excepturi itaque
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-black/20 flex flex-col px-8 py-5 gap-4  rounded-lg transition-transform md:min-w-fit hover:shadow-lg hover:scale-105 hover:border-t hover:border-blue-500">
+            <div
+              class="flex flex-col items-center gap-4 text-blue-500 text-lg md:flex-row"
+            >
+              <h5 class="text-black">Next Js</h5>
+            </div>
+            <div class="text-white/75 text-center md:text-left">
+              <p class="text-sm hidden md:block">
+                Lorem ipsum dolor sit amet palabral palabra para
+                <span class="md:block">
+                  adipisicing elit. Sint excepturi itaque
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-black/20 flex flex-col px-8 py-5 gap-4  rounded-lg transition-transform md:min-w-fit hover:shadow-lg hover:scale-105 hover:border-t hover:border-blue-500">
+            <div
+              class="flex flex-col items-center gap-4 text-blue-500 text-lg md:flex-row"
+            >
+              <h5 class="text-cyan-400">TailwindCss</h5>
+            </div>
+            <div class="text-white/75 text-center md:text-left">
+              <p class="text-sm hidden md:block">
+                Lorem ipsum dolor sit amet palabral palabra para
+                <span class="md:block">
+                  adipisicing elit. Sint excepturi itaque
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-black/20 flex flex-col px-8 py-5 gap-4  rounded-lg transition-transform md:min-w-fit hover:shadow-lg hover:scale-105 hover:border-t hover:border-blue-500">
+            <div
+              class="flex flex-col items-center gap-4 text-blue-500 text-lg md:flex-row"
+            >
+              <i class="fa-brands fa-bootstrap text-purple-500"></i>
+              <h5>Bootstrap</h5>
+            </div>
+            <div class="text-white/75 text-center md:text-left">
+              <p class="text-sm hidden md:block">
+                Lorem ipsum dolor sit amet palabral palabra para
+                <span class="md:block">
+                  adipisicing elit. Sint excepturi itaque
+                </span>
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <!--Project-->
+      <div class="px-4 md:px-0 md:max-w-6xl md:mx-auto flex justify-center items-center min-h-screen" id="project">
+        <p class="text-white bg-black/25 px-3 py-2 rounded">Proyect section</p>
+      </div>
+
     </main>
   </body>
   <script type="module" src="./index.js"></script>
