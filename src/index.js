@@ -1,8 +1,10 @@
-import "././utils/observer.js"
+import "./utils/observer.js"
 import "./utils/toggleMenu.js"
+import skillsetRenderUI from "./ui/renderSkillset.js"
 
-function main () {
-    console.log('Hello world')
+
+async function main () {
+    await skillsetRenderUI()
 }
 
 

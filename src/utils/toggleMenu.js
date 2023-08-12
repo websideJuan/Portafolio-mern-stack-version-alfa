@@ -2,9 +2,9 @@ const toggleMenu = document.querySelector('[data-toggle-menu="toggle"]')
 
 
 function showMenu (e) {
-    const ulMenuToggle = e.target.parentElement.parentElement.querySelector('ul') || document.querySelector('header>nav ul')
+    const ulMenuToggle = e.target.parentElement.parentElement.querySelector('#nav-content')
     const iconReplace = e.target
-    
+
     if (ulMenuToggle.classList.contains('translate-x-full')) {
 
         ulMenuToggle.classList.remove('translate-x-full')

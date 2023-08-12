@@ -1,0 +1,94 @@
+{
+    "skillsets": [
+        {
+            "skill_ID": 1,
+            "skill_name": "JavaScript",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_icon_existing": true,
+            "skill_icon": {
+                "icon_name": "fa-brands fa-square-js",
+                "icon_color": "text-yellow-300"
+            }
+        },
+        {
+            "skill_ID": 2,
+            "skill_name": "HTML",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_icon_existing": true,
+            "skill_icon": {
+                "icon_name": "fa-brands fa-html5",
+                "icon_color": "text-orange-500"
+            }
+        },
+        {
+            "skill_ID": 3,
+            "skill_name": "CSS",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_icon_existing": true,
+            "skill_icon": {
+                "icon_name": "fa-brands fa-css3-alt",
+                "icon_color": ""
+            }
+        },
+        {
+            "skill_ID": 4,
+            "skill_name": "React",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_icon_existing": true,
+            "skill_icon": {
+                "icon_name": "fa-brands fa-react",
+                "icon_color": "text-cyan-400"
+            }
+        },
+        {
+            "skill_ID": 5,
+            "skill_name": "Node js",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_icon_existing": true,
+            "skill_icon": {
+                "icon_name": "fa-brands fa-node-js",
+                "icon_color": "text-green-600"
+            }
+        },
+        {
+            "skill_ID": 6,
+            "skill_name": "Express Js",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_icon_existing": false,
+            "skill_icon": {
+                "icon_name": "",
+                "icon_color": ""
+            }
+        },
+        {
+            "skill_ID": 7,
+            "skill_name": "NEXT Js",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_icon_existing": false,
+            "skill_icon": {
+                "icon_name": "",
+                "icon_color": ""
+            }
+        },
+        {
+            "skill_ID": 8,
+            "skill_name": "TailwindCss",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_icon_existing": false,
+            "skill_icon": {
+                "icon_name": "",
+                "icon_color": ""
+            }
+        },
+        {
+            "skill_ID": 9,
+            "skill_name": "Bootstrap",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_icon_existing": true,
+            "skill_icon": {
+                "icon_name": "fa-brands fa-bootstrap",
+                "icon_color": "text-purple-500"
+            }
+        }
+    ]
+}

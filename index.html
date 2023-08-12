@@ -24,19 +24,19 @@
   <body class="bg-black-thing text-white/50">
 
     <header class="fixed top-0 w-full z-50 bg-black-thing shadow-lg">
+      <nav class="p-4">
+        <div class="flex justify-center">
 
-      <nav class="p-5">
-        <div class="grid grid-cols-2">
           <button
             type="button"
-            class="col-span-2 ml-auto relative z-50 md:hidden"
+            class="relative z-50 md:hidden"
             data-toggle-menu="toggle"
           >
             <i class="fa-solid fa-bars fa-xl"></i>
           </button>
 
-          <div class="col-span-2 md:col-span-2">
-            <ul class="flex flex-col justify-center gap-y-12 fixed top-0 bottom-0 right-0 p-4 transition-transform bg-black/70 w-1/2 translate-x-full shadow-lg md:shadow-none md:translate-x-0 md:text-base md:p-0 md:static md:bg-transparent md:flex-row md:justify-end md:gap-x-8 md:translate-y-0 md:ml-auto">
+          <div class="fixed inset-0 bg-black/25 transition-transform translate-x-full md:translate-x-0 md:static md:translate-y-0 md:bg-transparent" id="nav-content">
+            <ul class="h-full w-1/2 ml-auto bg-black/75 flex flex-col justify-center gap-y-12 p-4 md:p-0 md:bg-transparent md:flex-row md:justify-end md:gap-x-8 md:w-full">
               <li>
                 <a class="hover:text-white" href="#home">Home</a>
               </li>
@@ -54,14 +54,12 @@
 
         </div>
       </nav>
-
     </header>
 
-
-    <main id="main">
+    <main>
 
       <!--HERO-->
-      <section class="bg-black/25 md:py-20 px-4 flex justify-center items-center min-h-screen md:px-0 md:mt-0" id="home" data-section="true">
+      <section class="bg-black/25 center-content px-4 md:px-0" id="home" data-section="true">
         <div class="scale-0 transition-transform grid grid-cols-12 md:gap-10">
           
           <div class="col-span-12 flex flex-col items-center gap-8">
@@ -111,7 +109,7 @@
           </div>
 
           <div class="col-span-12 flex flex-col gap-8 justify-center text-center">
-            <h1 class="text-8xl text-blue-500">
+            <h1 class="text-7xl text-blue-500 md:text-8xl">
               Juan Herrera
             </h1>
           
@@ -124,9 +122,12 @@
       </section>
 
       <!--ABOUT-->
-      <section class="px-4 md:px-0 md:py-20 md:max-w-5xl md:mx-auto grid place-items-center min-h-screen" id="about" data-section="true">
-        <div class="scale-0 transition-transform flex flex-col items-start md:items-center gap-12 md:rounded-lg">
-          <h4 class="text-3xl text-blue-500">ABOUT ME</h4>
+      <section class="wrapper center-content" id="about" data-section="true">
+        <div class="scale-0 transition-transform flex flex-col items-start gap-12 md:items-center md:rounded-lg">
+          <div class="text-start md:text-center">
+            <h4 class="mb-4 text-3xl text-blue-500">ABOUT ME</h4>
+            <p class="text-sm mb-4 pl-2 md:pl-0">Description for dev</p>
+          </div>
 
           <p class="leading-6" id="ReducerText">
             Passionate MERN Stack Developer residing in Santiago de Chile,
@@ -138,14 +139,14 @@
       </section>
 
       <!--Project-->
-      <section class="md:py-20 px-4 md:px-0 md:max-w-5xl md:mx-auto flex justify-center items-center" id="project">
-        <div class="w-full gap-4 grid grid-cols-1">
+      <section class="wrapper my-20 pt-16" id="project">
+        <div class="grid grid-cols-1 gap-4 w-full">
           
           <div class="col-span-1 text-start md:text-center">
             <h5 class="mb-4 text-blue-500 rounded text-4xl">
               Project
             </h5>
-            <p class="text-xs mb-4 pb-2">
+            <p class="text-sm mb-4 pl-2 md:pl-0">
               Principales proyectos   
             </p>
           </div>
@@ -189,179 +190,32 @@
               </figure>
             </article>
           </div>
+
+
+          <div class="col-span-1">
+            <p class="text-center">show total project <a href="#" class="hover:underline text-blue-500">click</a> !</p>
+          </div>
         </div>
       </section>
 
       <!--Skills-->
-      <section class="py-20 px-4 md:px-0 md:max-w-5xl md:mx-auto flex items-center justify-center" id="skillsets" data-section="true">
-        <div class="scale-0 transition-transform grid col-span-1 w-full gap-4 sm:grid-cols-3">     
+      <section class="wrapper my-20 pt-16" id="skillsets">
+         <div class="grid col-span-1 w-full gap-4 sm:grid-cols-3">
 
           <div class="text-start col-span-1 sm:text-center sm:col-span-3">
             <h5 class="mb-4 text-blue-500 rounded text-4xl">
               Technologies
             </h5>
-            <p class="text-xs mb-4 pb-2">
+            <p class="text-sm mb-4 pl-2 md:pl-0">
               Mis principales tecnologias   
             </p>
           </div>
           
-          <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform md:gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500">
-           
-            <div class="flex flex-col items-center gap-4 text-blue-500 text-2xl md:flex-row">
-              <i class="fa-brands fa-square-js text-yellow-300"></i>
-              <h5>JavaScript</h5>
-            </div>
-
-            <div class="text-center md:text-left">
-              <p class="text-sm hidden md:block">
-                Lorem ipsum dolor sit amet palabral palabra para
-                <span class="md:block">
-                  adipisicing elit. Sint excepturi itaque.
-                </span>
-              </p>
-            </div>
-         
-          </div>
-
-          <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform md:gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500">
-            <div
-              class="flex flex-col items-center gap-4 text-blue-500 text-2xl md:flex-row"
-            >
-              <i class="fa-brands fa-html5 text-orange-500"></i>
-              <h5>HTML</h5>
-            </div>
-            <div class="text-center md:text-left">
-              <p class="text-sm hidden md:block">
-                Lorem ipsum dolor sit amet palabral palabra para
-                <span class="md:block">
-                  adipisicing elit. Sint excepturi itaque.
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform md:gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500">
-            <div
-              class="flex flex-col items-center gap-4 text-blue-500 text-2xl md:flex-row"
-            >
-              <i class="fa-brands fa-css3-alt"></i>
-              <h5>CSS</h5>
-            </div>
-            <div class="text-center md:text-left">
-              <p class="text-sm hidden md:block">
-                Lorem ipsum dolor sit amet palabral palabra para
-                <span class="md:block">
-                  adipisicing elit. Sint excepturi itaque
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform md:gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500">
-            <div
-              class="flex flex-col items-center gap-4 text-blue-500 text-2xl md:flex-row"
-            >
-              <i class="fa-brands fa-react text-cyan-400"></i>
-              <h5>React</h5>
-            </div>
-            <div class="text-center md:text-left">
-              <p class="text-sm hidden md:block">
-                Lorem ipsum dolor sit amet palabral palabra para
-                <span class="md:block">
-                  adipisicing elit. Sint excepturi itaque
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform md:gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500">
-            <div
-              class="flex flex-col items-center gap-4 text-blue-500 text-2xl md:flex-row"
-            >
-              <i class="fa-brands fa-node-js text-green-600"></i>
-              <h5>Node js</h5>
-            </div>
-            <div class="text-center md:text-left">
-              <p class="text-sm hidden md:block">
-                Lorem ipsum dolor sit amet palabral palabra para
-                <span class="md:block">
-                  adipisicing elit. Sint excepturi itaque
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform md:gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500">
-            <div
-              class="flex flex-col items-center gap-4 text-blue-500 text-2xl md:flex-row"
-            >
-              <h5 class="text-gray-400">Express Js</h5>
-            </div>
-            <div class="text-center md:text-left">
-              <p class="text-sm hidden md:block">
-                Lorem ipsum dolor sit amet palabral palabra para
-                <span class="md:block">
-                  adipisicing elit. Sint excepturi itaque
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform md:gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500">
-            <div
-              class="flex flex-col items-center gap-4 text-blue-500 text-2xl md:flex-row"
-            >
-              <h5 class="text-black">NEXT Js</h5>
-            </div>
-            <div class="text-center md:text-left">
-              <p class="text-sm hidden md:block">
-                Lorem ipsum dolor sit amet palabral palabra para
-                <span class="md:block">
-                  adipisicing elit. Sint excepturi itaque
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform md:gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500">
-            <div
-              class="flex flex-col items-center gap-4 text-blue-500 text-2xl md:flex-row"
-            >
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAXtJREFUSEvt1L9LVWEcx/GXVgiCLZGDGgklLhIIDonS0D/Qj0UpF3UQCUQaW6KgMXBQwR97S7hEJC1u4iAKESIRWiAqBdHQ4o8oHjjC5XKee869goj4jOf5PJ/39+epckKn6oQ4zkEVV/pUlu4mbuM6DrGKz9jOk2bejGYxQOrwzGAI/0oB84CGMZkR9Vs8wkGKrgZ7eUDrmMfHJOoQ/b0Uw3d4gL8Fdy/wCvtZoGY0YLHIeBxPUmCbeINaPEz6eD/oskClKjaC17gYEf1CG3aOCwrv7+Ap7qKuALiEx9g4+paWUSv60YIr+I5PWMBKJPoL6Egq9A27xbpi0CCmUR0xfI6XefamFKgJX/EHv3EjYjiHnmRpCyX1+BELojCjUXzBh2SM2zGBzpTH75PeBH0Yhj6EfZnKA7qKn0XCywim3RGDNVzDpaSnW3lAMU2IeCyyN+FNWNBehL9D9JSzRyGrLtxCY+K4j2dYzhqQckBZXiXvz0EVl+/sle4/T3o9G4ZjjikAAAAASUVORK5CYII="/>
-
-              <h5 class="text-cyan-400">TailwindCss</h5>
-            </div>
-            <div class="text-center md:text-left">
-              <p class="text-sm hidden md:block">
-                Lorem ipsum dolor sit amet palabral palabra para
-                <span class="md:block">
-                  adipisicing elit. Sint excepturi itaque
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform md:gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500">
-            <div
-              class="flex flex-col items-center gap-4 text-blue-500 text-2xl md:flex-row"
-            >
-              <i class="fa-brands fa-bootstrap text-purple-500"></i>
-              <h5>Bootstrap</h5>
-            </div>
-            <div class="text-center md:text-left">
-              <p class="text-sm hidden md:block">
-                Lorem ipsum dolor sit amet palabral palabra para
-                <span class="md:block">
-                  adipisicing elit. Sint excepturi itaque
-                </span>
-              </p>
-            </div>
-          </div>
-
         </div>
       </section>
 
     </main>
+
   </body>
   <script type="module" src="./src/index.js"></script>
 </html>
