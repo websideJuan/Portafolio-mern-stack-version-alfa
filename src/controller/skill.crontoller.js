@@ -33,7 +33,3 @@ export default async function skillController () {
 
     return skillsetsItems
 }
-
-
-{/* <div class="bg-black/20 flex flex-col px-8 py-5 rounded-lg transition-transform gap-4 md:min-w-fit hover:shadow-lg hover:scale-105 border-t border-blue-500" data-id=${skill_ID}>
-</div> */}
