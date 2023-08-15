@@ -3,7 +3,7 @@
         {
             "skill_ID": 1,
             "skill_name": "JavaScript",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-square-js",
@@ -13,7 +13,7 @@
         {
             "skill_ID": 2,
             "skill_name": "HTML",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-html5",
@@ -23,7 +23,7 @@
         {
             "skill_ID": 3,
             "skill_name": "CSS",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-css3-alt",
@@ -33,7 +33,7 @@
         {
             "skill_ID": 4,
             "skill_name": "React",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-react",
@@ -43,7 +43,7 @@
         {
             "skill_ID": 5,
             "skill_name": "Node js",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-node-js",
@@ -53,42 +53,104 @@
         {
             "skill_ID": 6,
             "skill_name": "Express Js",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": false,
             "skill_icon": {
-                "icon_name": "",
+                "icon_name": "./src/assets/icons/icons8-express-js.svg",
                 "icon_color": ""
             }
         },
         {
             "skill_ID": 7,
             "skill_name": "NEXT Js",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": false,
             "skill_icon": {
-                "icon_name": "",
+                "icon_name": "./src/assets/icons/nextjs-icon-svgrepo-com.svg",
                 "icon_color": ""
             }
         },
         {
             "skill_ID": 8,
             "skill_name": "TailwindCss",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": false,
             "skill_icon": {
-                "icon_name": "",
+                "icon_name": "./src/assets/icons/tailwindCss.svg",
                 "icon_color": ""
             }
         },
         {
             "skill_ID": 9,
             "skill_name": "Bootstrap",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque."],
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-bootstrap",
                 "icon_color": "text-purple-500"
             }
+        },
+        {
+            "skill_ID": 10,
+            "skill_name": "MongoDB",
+            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_icon_existing": false,
+            "skill_icon": {
+                "icon_name": "./src/assets/icons/mongoDB.svg",
+                "icon_color": ""
+            }
         }
-    ]
+    ],
+    "projects":[
+        {
+            "project_ID": 1,
+            "project_title":"projecto-card-feature-section-for-Sass",
+            "project_urls": {
+                "project_repo":"https://github.com/websideJuan/Blog_single_version_one",
+                "project_displayed":"https://websidejuan.github.io/projecto-card-feature-section-for-Sass/"
+            },
+            "project_stack":["HTML", "SCSS", "JavaScript"],
+            "project_image":"./src/assets/imagenes_de_proyectos/practica_card_feature_section_frontend_mentor.png"
+        },
+        {
+            "project_ID": 2,
+            "project_title":"Api-compra-js",
+            "project_urls": {
+                "project_repo":"https://github.com/websideJuan/Carrito-con-coleccion-de-objetos",
+                "project_displayed":"https://websidejuan.github.io/Carrito-con-coleccion-de-objetos"
+            },
+            "project_stack":["HTML", "CSS", "JavaScript", "Bootstrap"],
+            "project_image":"./src/assets/imagenes_de_proyectos/practica_carrito_de_compras_javascript.png"
+        },
+        {
+            "project_ID": 3,
+            "project_title":"Page-of-News-CssGrid",
+            "project_urls": {
+                "project_repo":"https://github.com/websideJuan/Page-of-News-CssGrid",
+                "project_displayed":"https://paginadenoticias.netlify.app/"
+            },
+            "project_stack":["React js", "tailwindCss"],
+            "project_image":"./src/assets/imagenes_de_proyectos/projecto_frontend_mentor_newsPage.png"
+        },
+        {
+            "project_ID": 4,
+            "project_title":"trabajo-formulario-estudiante-de-backend",
+            "project_urls": {
+                "project_repo":"https://github.com/websideJuan/trabajo-formulario-estudiante-de-backend",
+                "project_displayed":"https://websidejuan.github.io/trabajo-formulario-estudiante-de-backend/"
+            },
+            "project_stack":["HTML", "CSS", "JavaScript"],
+            "project_image":"./src/assets/imagenes_de_proyectos/Trabajo_para_estudiante_state-finalizado.png"
+        },
+        {
+            "project_ID": 5,
+            "project_title":"Interactive-rating-component",
+            "project_urls": {
+                "project_repo":"https://github.com/websideJuan/Interactive-rating-component",
+                "project_displayed":"https://websidejuan.github.io/Interactive-rating-component/"
+            },
+            "project_stack":["HTML","CSS","JavaScript"],
+            "project_image":"./src/assets/imagenes_de_proyectos/practica_interactive_card_frontend_mentor.png"
+        }
+    ] 
 }

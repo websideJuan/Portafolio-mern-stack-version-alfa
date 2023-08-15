@@ -6,10 +6,18 @@
 
 @layer components {
     .wrapper {
-        @apply px-4 max-w-5xl mx-auto md:px-0
+        @apply px-4 max-w-5xl mx-auto
     }
 
     .center-content {
         @apply flex justify-center items-center min-h-screen
+    }
+
+    .text-gradiente {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500
+    }
+
+    .social-icons {
+        @apply text-blue-600 transition-transform relative after:bottom-[120%] after:content-[attr(data-text)] after:absolute after:w-24 after:text-center after:py-1 after:-translate-x-1/2 after:left-1/2 after:hidden  after:text-white/75 after:text-xs after:font-thin after:rounded-3xl hover:after:block hover:scale-125  hover:text-blue-400
     }
 }

@@ -3,9 +3,9 @@ export default async function fetchingData () {
         const result = await fetch('./src/data/skillsets.json')
         const data = await result.json()
          
-        return data.skillsets
+        return data
     } catch (error) {
-        console.log(error)
+        console.log(error.message)
     } finally {
         console.log('hola mundo')
     }
