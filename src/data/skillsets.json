@@ -151,6 +151,16 @@
             },
             "project_stack":["HTML","CSS","JavaScript"],
             "project_image":"./src/assets/imagenes_de_proyectos/practica_interactive_card_frontend_mentor.png"
+        },
+        {
+            "project_ID": 6,
+            "project_title":"Portafolio_FullStack",
+            "project_urls": {
+                "project_repo":"https://github.com/websideJuan/Portafolio-mern-stack-version-alfa",
+                "project_displayed":"https://websidejuan.github.io/Portafolio-mern-stack-version-alfa/"
+            },
+            "project_stack":["HTML","tailwindCss","JavaScript"],
+            "project_image":"./src/assets/imagenes_de_proyectos/Portafolio_FullStack.png"
         }
     ] 
 }
