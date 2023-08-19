@@ -119,7 +119,7 @@
                 "project_repo":"https://github.com/websideJuan/Carrito-con-coleccion-de-objetos",
                 "project_displayed":"https://websidejuan.github.io/Carrito-con-coleccion-de-objetos"
             },
-            "project_stack":["HTML", "CSS", "JavaScript", "Bootstrap"],
+            "project_stack":["HTML", "Bootstrap", "JavaScript"],
             "project_image":"./src/assets/imagenes_de_proyectos/practica_carrito_de_compras_javascript.png"
         },
         {
