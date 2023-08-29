@@ -16,13 +16,12 @@ export default async function skillController () {
                 ${skill_icon_existing ? `<i class='${skill_icon.icon_name.concat(' ', skill_icon.icon_color)} text-4xl '></i>`: `<img class="w-10 h-10" src=${skill_icon.icon_name} alt="..."/>`}
                 <h5 class="text-gradiente font-bold">${skill_name}</h5>
             </div>
-            <div class="text-center">
-                <p>
-                    ${skill_description[0]}
-                    <span>
-                        ${skill_description[1]}
-                    </span>
-                </p>
+            <div>
+                <div class="flex flex-col gap-3 mx-auto max-w-[200px] text-center text-sm">
+                    ${
+                        skill_description.map(description => `<span>${description}</span>`).join(' ')
+                    }
+                </div>
             </div>
         `
 

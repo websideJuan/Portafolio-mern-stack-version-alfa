@@ -3,7 +3,7 @@
         {
             "skill_ID": 1,
             "skill_name": "JavaScript",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["Manejo de asincronia, Block scope, hosting DOM, y APIs.", "Como mi lenguaje de programacion principal disfruto de utilizarlo tanto vanilla como con frameworks, gracias a esto tengo una excelente base de este mismo."],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-square-js",
@@ -13,7 +13,7 @@
         {
             "skill_ID": 2,
             "skill_name": "HTML",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["Semantica, Accesibilidad, atributos globales.", "Siendo el lenguaje mas utilizado en la web, y prencente en todos los diseños y/o interfaces de usuario dominarlo es un requisito minimo"],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-html5",
@@ -23,7 +23,7 @@
         {
             "skill_ID": 3,
             "skill_name": "CSS",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["Prefijos y Resposibe design, Especificidad, Variables, Flexbox, Grid", "Como la parte visual de mis aplicaciones son las que generan mas impacto en mis clientes, siempre me ecuentro estudiando y practicando, estando al tanto de lo nuevo en css."],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-css3-alt",
@@ -33,7 +33,7 @@
         {
             "skill_ID": 4,
             "skill_name": "React",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["React Hooks, Virtual DOM, JSX, componentization", "Acelerarr e intensificar el poder de JavaScrip para crear componentes con o sin estados, crear rutas para una SPA, programacion declarativa."],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-react",
@@ -43,7 +43,7 @@
         {
             "skill_ID": 5,
             "skill_name": "Node js",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["Asincronia, Servidores, REST API, npm.", "El poderoso entorno de ejecucion de node y poder trabajar con el mismo codigo de JavaScript para el backend facilita mi desarrollo de aplicaciones full stack."],
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-node-js",
@@ -53,7 +53,7 @@
         {
             "skill_ID": 6,
             "skill_name": "Express Js",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["Acelerar el desarrollo de servidores", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": false,
             "skill_icon": {
                 "icon_name": "./src/assets/icons/icons8-express-js.svg",
@@ -63,7 +63,7 @@
         {
             "skill_ID": 7,
             "skill_name": "NEXT Js",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["SSG, SSR, SPA, rutas dinamicas", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
             "skill_icon_existing": false,
             "skill_icon": {
                 "icon_name": "./src/assets/icons/nextjs-icon-svgrepo-com.svg",
@@ -73,7 +73,7 @@
         {
             "skill_ID": 8,
             "skill_name": "TailwindCss",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["Siendo el framework de css mas flexible al momento de crear interfaces unicas de forma rapida, solo utilizando las clases necesarias."],
             "skill_icon_existing": false,
             "skill_icon": {
                 "icon_name": "./src/assets/icons/tailwindCss.svg",
@@ -83,7 +83,8 @@
         {
             "skill_ID": 9,
             "skill_name": "Bootstrap",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["Crear aplicaciones, paginas, dashboard y mucho mas con utilidades o componentes de clases ya existentes y con una amplia comunidad la facilidad puedo maquetar contra el tiempo."],
+
             "skill_icon_existing": true,
             "skill_icon": {
                 "icon_name": "fa-brands fa-bootstrap",
@@ -93,7 +94,7 @@
         {
             "skill_ID": 10,
             "skill_name": "MongoDB",
-            "skill_description": ["Lorem ipsum dolor sit amet palabral palabra para", "adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint excepturi itaque. adipisicing elit. Sint"],
+            "skill_description": ["Documentos, Facilidad de consultas", "Como base de datos no relacional, tiende a ser mucho mas facil poder entender los requerimientos que se necesitan al momento de utilizar mongodb atlas o ver en tiempo real, crear documentos, actualizarlos y mas con mongodb compass"],
             "skill_icon_existing": false,
             "skill_icon": {
                 "icon_name": "./src/assets/icons/mongoDB.svg",
@@ -151,16 +152,6 @@
             },
             "project_stack":["HTML","CSS","JavaScript"],
             "project_image":"./src/assets/imagenes_de_proyectos/practica_interactive_card_frontend_mentor.png"
-        },
-        {
-            "project_ID": 6,
-            "project_title":"Portafolio_FullStack",
-            "project_urls": {
-                "project_repo":"https://github.com/websideJuan/Portafolio-mern-stack-version-alfa",
-                "project_displayed":"https://websidejuan.github.io/Portafolio-mern-stack-version-alfa/"
-            },
-            "project_stack":["HTML","tailwindCss","JavaScript"],
-            "project_image":"./src/assets/imagenes_de_proyectos/Portafolio_FullStack.png"
         }
     ] 
 }

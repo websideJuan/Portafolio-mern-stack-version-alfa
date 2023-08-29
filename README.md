@@ -8,7 +8,7 @@ A lo largo de mis estudios he creado un sinfin de portafolios para llegar a este
 
 ## Capturas de Pantalla
 
-!["Portafolio Terminado"](./src/assets/imagenes_de_proyectos/practica_carrito_de_compras_javascript.png)
+!["Portafolio Terminado"](./src/assets/imagenes_de_proyectos/Portafolio_FullStack.png)
 
 ## Tecnologías Utilizadas
 
