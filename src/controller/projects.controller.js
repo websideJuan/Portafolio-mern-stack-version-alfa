@@ -2,10 +2,10 @@ import fetchingData from "../data/fetchingData.js";
 
 
 export default async function projectsController () {
-    const {projects} = await fetchingData()
+    const { projects } = await fetchingData()
 
     const projectsItems = projects.map((project) => {
-        const {project_ID, project_title, project_urls, project_stack, project_image} = project
+        const { project_ID, project_title, project_urls, project_stack, project_image } = project
 
         const containerProject = document.createElement('div')
 
@@ -52,7 +52,3 @@ export default async function projectsController () {
 
     return projectsItems
 }
-
-// <span class="text-orange-400">HTML </span>/
-// <span class="text-blue-500">CSS </span>/
-// <span class="text-yellow-400"> JavaScript</span>

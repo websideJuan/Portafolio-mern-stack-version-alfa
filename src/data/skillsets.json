@@ -115,12 +115,12 @@
         },
         {
             "project_ID": 2,
-            "project_title":"Api-compra-js",
+            "project_title":"Ecomerce prototype",
             "project_urls": {
-                "project_repo":"https://github.com/websideJuan/Carrito-con-coleccion-de-objetos",
-                "project_displayed":"https://websidejuan.github.io/Carrito-con-coleccion-de-objetos"
+                "project_repo":"https://github.com/websideJuan/Prototype-shopping-cart",
+                "project_displayed":"https://websidejuan.github.io/Prototype-shopping-cart/"
             },
-            "project_stack":["HTML", "Bootstrap", "JavaScript"],
+            "project_stack":["HTML", "css", "JavaScript"],
             "project_image":"./src/assets/imagenes_de_proyectos/practica_carrito_de_compras_javascript.png"
         },
         {
